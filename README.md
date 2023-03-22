@@ -1,7 +1,7 @@
 # Image based Cell Phenotyping using Vision Transformers on Amazon SageMaker
 
 <p align="center">
-  <img src="./images/PyTorch DDP.png" alt="EC2 + PyTorch" height="200"/>
+  <img src="./images/PyTorchSM.jpg" alt="EC2 + PyTorch" height="200"/>
 </p>
 
 ## Background
