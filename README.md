@@ -1,4 +1,4 @@
-# Image based Cell Phenotyping on AWS EC2 Instances
+# Image based Cell Phenotyping using Vision Transformers on Amazon SageMaker
 
 <p align="center">
   <img src="./images/PyTorch DDP.png" alt="EC2 + PyTorch" height="200"/>
@@ -10,17 +10,17 @@ The ability to phenotype cells is important for biological research and drug dev
 
 
 ## Concepts Covered
-After completing this repository, you will be able to understand the following concepts: 
-- Provision an [AWS EC2](https://aws.amazon.com/ec2/) and running the training of a CNN model  with [Pytorch Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
-- Profile model training performance using PyTorch Profilder. 
-- Adapt the training script to run model training on AWS Tranium (Trn1) and DL1 instances. 
-
+The following concepts are covered as part of this implementation: 
+- Developing machine learning models on [Amazon SageMaker](https://aws.amazon.com/pm/sagemaker/)
+- Running Distributed Data Parallel model training on a Vision Transformer with [Pytorch Distributed Data Parallel](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html)
+- Track and save model experiments in [SageMaker Experiments](https://aws.amazon.com/blogs/aws/amazon-sagemaker-experiments-organize-track-and-compare-your-machine-learning-trainings/) 
+- Running Hyperparameter Tuning using [SageMaker Automatic Model Tuning](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html)
 
 # Getting started  
 ### 1. Prerequisites
 #### Platforms 
-##### AWS EC2 instance properties   
-It is recommended that the training script is executed in a multi-GPU instance such as p3.16xlarge or p3dn.24xlarge. 
+##### Amazon SageMaker   
+It is recommended that the training job is executed in a multi-GPU instance such as p3.16xlarge or p3dn.24xlarge. 
 ##### Amazon S3   
 For ease of use, download the training data from [UBC Research Data Collection](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP2/TDULMF) into an S3 bucket
 
